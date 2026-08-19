@@ -1,0 +1,6 @@
+AGENTS_README.local.md
+AGENT_README.local.md
+.DS_Store
+node_modules/
+coverage/
+*.log

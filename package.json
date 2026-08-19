@@ -1,0 +1,11 @@
+{
+  "name": "ai-agent-journey-journal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A living, evidence-backed journal of a personal AI-agent systems journey.",
+  "scripts": {
+    "test": "node --test tests/journal.test.js",
+    "safety": "node scripts/public-safety-check.js",
+    "check": "node --check timeline-data.js && node --check theme-init.js && node --check app.js && node --check scripts/public-safety-check.js && git diff --check"
+  }
+}

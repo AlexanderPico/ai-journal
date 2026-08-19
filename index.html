@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="description" content="A living, evidence-backed journal of one person's shift from AI assistant use to operating—and simplifying—a local agent fleet.">
+  <title>From Chat Window to Agent Fleet — A Living Journal</title>
+  <script src="theme-init.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <header class="hero" id="top">
+    <nav class="topbar" aria-label="Journal controls">
+      <a class="wordmark" href="#top">Agent Journey <sup>01</sup></a>
+      <div class="nav-actions">
+        <button class="text-button" id="toggleTheme" type="button" aria-pressed="false">Dark</button>
+      </div>
+    </nav>
+
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow">A living field journal · Begun 2025 · Ongoing</p>
+        <h1>From a chat window<br>to an agent fleet<br><em>and back to a smaller core.</em></h1>
+      </div>
+      <div class="hero-aside">
+        <p class="lede">A continuing record of turning increasingly capable models into persistent local infrastructure—and learning when the most mature move is not another layer, but subtraction.</p>
+        <div class="stat-grid" id="stats" aria-label="Timeline statistics"></div>
+      </div>
+    </div>
+
+    <a class="scroll-cue" href="#timeline">Scroll the record <span>↓</span></a>
+  </header>
+
+  <main>
+    <section class="thesis section-pad" aria-labelledby="thesisTitle">
+      <p class="section-label">The pattern</p>
+      <h2 id="thesisTitle">This was never only a story about better models.</h2>
+      <div class="thesis-grid">
+        <p>It was a progression from <strong>answers</strong> to <strong>actions</strong>, from actions to <strong>systems</strong>, and from systems to the harder questions: What deserves to persist? What can act without me? What should remember? What should be shut down?</p>
+        <ol class="arc-list" id="arcList"></ol>
+      </div>
+    </section>
+
+    <section class="mirror section-pad" aria-labelledby="mirrorTitle">
+      <div class="section-heading-row">
+        <div>
+          <p class="section-label">The industry mirror</p>
+          <h2 id="mirrorTitle">A personal path through a public transition</h2>
+        </div>
+        <p class="section-note">These are parallels, not claims of causation or universal adoption.</p>
+      </div>
+      <div class="trend-grid" id="trendGrid"></div>
+    </section>
+
+    <section class="timeline-shell" id="timeline" aria-labelledby="timelineTitle">
+      <aside class="era-rail" aria-label="Timeline eras">
+        <p class="section-label">The journal</p>
+        <h2 id="timelineTitle">The journey,<br>so far</h2>
+        <nav id="eraNav"></nav>
+      </aside>
+      <div class="timeline" id="timelineEntries"></div>
+    </section>
+
+    <section class="lessons section-pad" aria-labelledby="lessonsTitle">
+      <p class="section-label">What survived the churn</p>
+      <h2 id="lessonsTitle">The durable lessons were architectural—and human.</h2>
+      <div class="lesson-grid" id="lessonGrid"></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Reconstructed from private source records; detailed provenance remains private.</p>
+    <p id="updatedAt"></p>
+  </footer>
+
+  <script src="timeline-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
