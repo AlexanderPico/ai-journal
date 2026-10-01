@@ -1,8 +1,8 @@
 globalThis.AGENT_JOURNEY = {
   meta: {
     title: "From Chat Window to Agent Fleet",
-    updated: "2026-08-19",
-    scope: "2025-12-30 through 2026-08-19"
+    updated: "2026-10-01",
+    scope: "2025-12-30 through 2026-09-22"
   },
 
   eras: [
@@ -340,6 +340,30 @@ globalThis.AGENT_JOURNEY = {
       summary: "The architecture moved toward a small Hermes-centered set of profiles while OpenClaw became a read-only archive. Legacy specialist personas became bounded jobs. Knowledge systems, coding, voice, remote continuity, and modular dashboards could survive—but only when individually justified and stoppable.",
       turn: "The journey ends its first arc by separating durable value from the machinery that happened to produce it.",
       tags: ["Hermes", "OpenClaw retirement", "bounded jobs", "security"],
+      confidence: "high"
+    },
+    {
+      id: "2026-09-outcome-first-admission",
+      date: "2026-09-18",
+      displayDate: "SEP 2026",
+      era: "contraction",
+      stage: "Activity → admitted work",
+      title: "Work has to earn admission before the system builds more of it.",
+      summary: "September replaced open-ended agent activity with an explicit admission rule: an increment counts only if it produces a named useful artifact or clears a demonstrated blocker to the next one. Tests, schemas, queues, dashboards, status reports, and monitors were reclassified as enabling work rather than progress. Execution paths were rebuilt to fail closed, to require a verifiable receipt that a step actually ran, and to treat a deliberate hold or a useful negative result as a legitimate outcome. In the same pass, most always-on automation was switched off and several autonomous research boards and loop monitors were retired to static placeholders rather than repaired.",
+      turn: "The limiting resource stopped being capability and became justification: a system that can always generate more work needs a rule for which work is allowed to exist.",
+      tags: ["admission", "outcome-first", "fail-closed", "retirement"],
+      confidence: "high"
+    },
+    {
+      id: "2026-09-advisory-routing",
+      date: "2026-09-22",
+      displayDate: "SEP 2026",
+      era: "contraction",
+      stage: "Default model → budgeted choice",
+      title: "Choosing a model becomes a measured, advisory budget decision.",
+      summary: "Model selection moved from habit to instrumentation. Remaining capacity across several subscription and credit pools is now observed on a bounded schedule outside the agent loop, with depletion projected per model, and unknown values shown as unknown instead of as zero. A separate recommendation engine scores a described job against deadline, capacity, spend posture, quality risk, and local-versus-cloud policy—but it is deliberately advisory only: it reads nothing about accounts, makes no model calls, and cannot dispatch work. Preserving a scarce frontier allowance became a first-class routing intent alongside preferring local or cheaper routes for routine work.",
+      turn: "Once a fleet can spend real allowance on its own, the honest design separates measurement from recommendation and recommendation from authority to act.",
+      tags: ["model routing", "cost", "capacity", "advisory-only", "local-first"],
       confidence: "high"
     }
   ],
