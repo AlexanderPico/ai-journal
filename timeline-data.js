@@ -1,7 +1,7 @@
 globalThis.AGENT_JOURNEY = {
   meta: {
     title: "From Chat Window to Agent Fleet",
-    updated: "2026-10-01",
+    updated: "2026-11-01",
     scope: "2025-12-30 through 2026-09-22"
   },
 
@@ -365,6 +365,18 @@ globalThis.AGENT_JOURNEY = {
       turn: "Once a fleet can spend real allowance on its own, the honest design separates measurement from recommendation and recommendation from authority to act.",
       tags: ["model routing", "cost", "capacity", "advisory-only", "local-first"],
       confidence: "high"
+    },
+    {
+      id: "2026-10-selective-reexpansion",
+      date: "2026-10-27",
+      displayDate: "OCT 2026",
+      era: "contraction",
+      stage: "Shutdown → selective re-expansion",
+      title: "Automation returns, but only around things that get published.",
+      summary: "After September's shutdown left only a handful of scheduled jobs running, October brought automation back in a narrower shape. The jobs that returned are tied to outputs a reader can see: daily generated posts, a media and reply queue for a public persona, recurring content refreshes for family sites, and a steady reading-and-research intake into one consolidated personal research corpus. Each public output gets a release queue with explicit states, a record of what actually went out, and a monitor that shows what is next, what is held, and what was skipped. Several older research dashboards were retired in favor of that single corpus rather than repaired.",
+      turn: "Contraction was not a retreat from automation; it was a filter. Work came back when it had a visible product, a receipt, and a way to be switched off.",
+      tags: ["selective automation", "release queue", "receipts", "consolidation"],
+      confidence: "medium"
     }
   ],
 
