@@ -1,8 +1,8 @@
 globalThis.AGENT_JOURNEY = {
   meta: {
-    title: "From Chat Window to Agent Fleet",
-    updated: "2026-11-01",
-    scope: "2025-12-30 through 2026-09-22"
+    title: "Working with AI",
+    updated: "2026-11-03",
+    scope: "2025-12-30 through 2026-10-27"
   },
 
   eras: [
@@ -40,7 +40,13 @@ globalThis.AGENT_JOURNEY = {
       id: "contraction",
       title: "Maturity looks like subtraction",
       short: "Security and usefulness determine what remains alive.",
-      description: "The final turn was a reversal: inspect the attack surface, stop low-value automation, retire duplicate personas, preserve useful artifacts, and rebuild around a smaller operator-initiated core."
+      description: "A period of contraction reset the terms of growth: inspect the attack surface, stop low-value automation, retire duplicate personas, preserve useful artifacts, and rebuild around a smaller operator-initiated core."
+    },
+    {
+      id: "productive-scale",
+      title: "More useful work from a bounded system",
+      short: "Use the capacity. Keep the discipline.",
+      description: "With a smaller, more legible system in place, attention shifts to making fuller use of available capacity across research, writing, software, and creative work. Productivity can grow without giving up human judgment, budget awareness, or the ability to stop."
     }
   ],
 
@@ -338,7 +344,7 @@ globalThis.AGENT_JOURNEY = {
       stage: "Fleet → smaller core",
       title: "OpenClaw moves to archive; useful functions survive as bounded capabilities.",
       summary: "The architecture moved toward a small Hermes-centered set of profiles while OpenClaw became a read-only archive. Legacy specialist personas became bounded jobs. Knowledge systems, coding, voice, remote continuity, and modular dashboards could survive—but only when individually justified and stoppable.",
-      turn: "The journey ends its first arc by separating durable value from the machinery that happened to produce it.",
+      turn: "Separating durable value from the machinery that happened to produce it creates a stronger foundation for whatever comes next.",
       tags: ["Hermes", "OpenClaw retirement", "bounded jobs", "security"],
       confidence: "high"
     },
@@ -370,12 +376,12 @@ globalThis.AGENT_JOURNEY = {
       id: "2026-10-selective-reexpansion",
       date: "2026-10-27",
       displayDate: "OCT 2026",
-      era: "contraction",
-      stage: "Shutdown → selective re-expansion",
-      title: "Automation returns, but only around things that get published.",
-      summary: "After September's shutdown left only a handful of scheduled jobs running, October brought automation back in a narrower shape. The jobs that returned are tied to outputs a reader can see: daily generated posts, a media and reply queue for a public persona, recurring content refreshes for family sites, and a steady reading-and-research intake into one consolidated personal research corpus. Each public output gets a release queue with explicit states, a record of what actually went out, and a monitor that shows what is next, what is held, and what was skipped. Several older research dashboards were retired in favor of that single corpus rather than repaired.",
-      turn: "Contraction was not a retreat from automation; it was a filter. Work came back when it had a visible product, a receipt, and a way to be switched off.",
-      tags: ["selective automation", "release queue", "receipts", "consolidation"],
+      era: "productive-scale",
+      stage: "Bounded system → productive scale",
+      title: "The capacity is there to be used.",
+      summary: "Turn 06 made the agent system smaller, safer, and easier to govern. October's next step was not to undo that discipline. It was to use the resulting system much more fully.\n\nThe center of attention shifted from how much machinery was running to how much useful work could be made with the capacity already available. Subscription allowances became a working resource to put to use, rather than something to preserve by keeping productive work idle. The aim was to make fuller use of that capacity across research, writing, software, and creative work—not to generate activity simply because more tokens were available.\n\nThe change was visible in the work taking shape: research pieces and supporting resources, illustrated postcards, family-site content, and a publishing pipeline spanning more than one format. Agents were helping carry material from an idea through investigation, drafting, revision, and release preparation. The system was no longer chiefly a project to maintain; it was becoming a way to make other projects move.\n\nThe productivity ramp depended on keeping Turn 06's gains. Work still needed a useful destination. A draft was not a publication, a suggestion was not permission, and a scheduled release was not an instruction to ship unfinished material. Queues made choices visible; receipts distinguished what had actually gone out from what was merely prepared.\n\nHuman judgment remained central. Agents could prepare public copy or suggest a social-media reply without acquiring authority to publish it. Weak workflows could still be paused or retired. Scarce capacity still needed to be matched to the work rather than spent indiscriminately.\n\nOne October decision made that distinction especially clear. Interfaces that asked for separate reflection or questionnaire answers were retired, while the goal of preserving personal judgment remained. The proposed source was the work already being done: corrections, choices between alternatives, revisions, and decisions about what to release. The extraction methods remained research, not proof that a model had learned the person's preferences.\n\nThe ambition was no longer the largest fleet or the busiest dashboard. It was a higher rate of useful output from a system whose boundaries remained understandable.\n\nThat is a change in operating direction, not a measured productivity multiplier. Fuller subscription use does not by itself establish better work; a shipping receipt does not establish reader value. The test is whether the additional capacity helps finish worthwhile things without recreating the overhead and unchecked autonomy that prompted the contraction.",
+      turn: "After learning what to stop, the system begins to scale what is worth doing—using available capacity more fully while retaining the limits that made it manageable.",
+      tags: ["productivity", "subscription capacity", "bounded automation", "human judgment"],
       confidence: "medium"
     }
   ],

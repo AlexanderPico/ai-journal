@@ -72,7 +72,7 @@
             <span class="confidence">${escapeHtml(entry.confidence)} confidence</span>
           </div>
           <h4>${escapeHtml(entry.title)}</h4>
-          <p class="summary">${escapeHtml(entry.summary)}</p>
+          ${entry.summary.split(/\n\n+/).map((paragraph) => `<p class="summary">${escapeHtml(paragraph)}</p>`).join('')}
           <p class="turning-point"><strong>The turn:</strong> ${escapeHtml(entry.turn)}</p>
           <div class="entry-tags">${entry.tags.map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join('')}</div>
         </div>

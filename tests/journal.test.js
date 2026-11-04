@@ -13,7 +13,28 @@ const data = context.globalThis.AGENT_JOURNEY;
 test('journal data loads and has substantial chronology', () => {
   assert.ok(data);
   assert.ok(data.entries.length >= 18);
-  assert.equal(data.eras.length, 6);
+  assert.ok(data.eras.length >= 7);
+});
+
+test('October opens Turn 07 without duplicating its historical milestone', () => {
+  const era = data.eras[6];
+  assert.equal(era.id, 'productive-scale');
+  const october = data.entries.filter((entry) => entry.id === '2026-10-selective-reexpansion');
+  assert.equal(october.length, 1);
+  assert.equal(october[0].date, '2026-10-27');
+  assert.equal(october[0].era, era.id);
+  assert.match(october[0].summary, /subscription/i);
+  assert.match(october[0].summary, /Turn 06/);
+  assert.ok(data.meta.scope.includes(data.entries.at(-1).date));
+});
+
+test('opening and era framing leave the living journal open to future turns', () => {
+  const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+  assert.match(html, /Working with AI/);
+  assert.match(html, /what changes next/i);
+  assert.doesNotMatch(html, /and back to a smaller core|most mature move/i);
+  const framing = data.eras.map((era) => era.description).join(' ');
+  assert.doesNotMatch(framing, /the final turn|journey ends/i);
 });
 
 test('entries are chronological and have valid era references', () => {

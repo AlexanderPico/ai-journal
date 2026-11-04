@@ -62,7 +62,8 @@ If the result is `UPDATE`:
 - define abbreviations and specialist terms on first use
 - assign an honest confidence level
 - add a new era only when the existing conceptual turns cannot truthfully contain the change
-- update `meta.updated`
+- update `meta.updated` and keep `meta.scope` aligned with the latest entry date
+- keep the hero and era descriptions open-ended: the latest turn is not the final destination, and later turns may build on rather than reverse earlier lessons
 - update public trend anchors only when an official source materially improves the historical parallel
 
 ### Never publish
